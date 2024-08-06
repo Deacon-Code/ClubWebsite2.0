@@ -1,0 +1,103 @@
+.content-container {
+    height: 175vh;
+    max-width: 100%;
+    background-color: rgba(253, 195, 20);
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column; 
+    box-sizing: border-box; /* Added */
+    overflow-x: hidden; /* Added to prevent horizontal overflow */
+}
+.content-container .top-section {
+    padding-bottom: 10rem;
+}
+
+.content-container .top-section .typewriter { 
+    padding-top: 8rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw; /* Changed from 80vh to 80vw */
+    height: 80vh;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none; /* Changed from 0px solid rgb(0, 0, 0) to none */
+    flex-wrap: wrap;
+    white-space: normal;
+    align-items: center;
+}
+
+.mouse {
+    margin: 0 auto;
+    width: 3rem;
+    height: 5.4rem;
+    border: 0.3rem solid #000000;
+    border-radius: 6rem;
+    position: relative; 
+    &::before {
+        content: '';
+        width: 0.9rem;
+        height: 0.9rem;
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #000000;
+        border-radius: 50%;
+        opacity: 1;
+        -webkit-animation: wheel 2s infinite;
+        animation: wheel 2s infinite;
+    }
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+.heading-home{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    flex-direction: row;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center; 
+}
+
+.btn-home{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+

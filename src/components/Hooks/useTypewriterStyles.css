@@ -1,0 +1,11 @@
+.typewriter-container {
+    display: flex;
+    flex-direction: column; /* or row, depending on your layout needs */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vh;
+  }
+  
+  .typewriter-line {
+    margin: 0rem; /* Remove default margin from h1 */
+  }

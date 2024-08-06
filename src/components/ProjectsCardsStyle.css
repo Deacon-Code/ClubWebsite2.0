@@ -1,0 +1,123 @@
+ /* Three columns side by side */
+ .card-container{
+  background-image: url("../assets/blackAndYellowSquare.svg");
+  }
+   
+  .column {
+    float: left;
+    flex: 1;
+    width: 33.00%;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+      .row{
+        flex-direction: column;
+      }
+  }
+
+
+  .card-container{
+      background-size: cover;
+      background-color: rgb(0, 0, 0);
+    }
+
+  
+  
+  .Project-card{
+    display: flex block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(253, 195, 20, 1); 
+    border-radius: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+    }
+
+  .Project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+
+.Project-card img {
+    border: 0px solid rgb(247, 6, 6);
+    padding: 0px;
+    border-radius: 10px;
+    width: 100%; /* Make width responsive */
+    height: auto; /* Height auto for aspect ratio */
+    aspect-ratio: 1 / 1; /* Ensures the image stays square, replace with desired ratio */
+    object-fit: cover; /* Cover to ensure image fills the area */
+    margin: 0 auto;
+    display: block;
+
+}
+
+  /* Some left and right padding inside the container */
+  .inside-card-container { /*THIS IS THE CONTAINER FOR THE ITEMS IN THE CARDS!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Adjusts spacing around cards */
+    padding: 0 10px;
+    text-align: center;
+
+  }
+
+  .inside-card-container .card-info{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 4em;
+  }
+  
+  /* Clear floats */
+  .card-container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .Project-card .btn-project{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem .2rem;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    white-space: normal;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+
+  }
+
+  .Project-card .btn-project:hover{
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  
+
+

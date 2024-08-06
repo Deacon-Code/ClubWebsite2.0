@@ -1,0 +1,200 @@
+ /* Three columns side by side */
+ .column {
+    float: left;
+    flex: 1;
+    width: 25.00%;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .QandA h1{
+   padding: 0.5rem;
+   color: rgb(0, 0, 0);
+  }
+
+  .QandA p{
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+    
+   }
+
+   .dotIcon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -3px;
+    box-sizing: border-box;
+    width: 20px; 
+    height: 20px;
+    color: rgba(253, 195, 20,1); /* Change the color of the dot */
+  }
+
+  .QandA .about-image {
+      justify-content: center;
+      padding: 1rem;
+  }
+
+  .QandA{
+      background: rgb(255, 255, 255);
+  }
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+      .row{
+        flex-direction: column;
+      }
+  }
+
+  .midsection-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin: auto;
+    background-color: rgba(253, 195, 20);
+    height: 40vh;
+    width: 100%; 
+  }
+
+  .personel{
+    background-image: url('../assets/blackAndYellowSquare.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .align-center-header{
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .about{
+      background: rgba(0,0,0);
+      background-size: cover;
+      background-position: center;
+    }
+
+  .about .about-text{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../assets/yellowWhiteSquare.svg");
+    padding: 0.4rem;
+    font-size: 1.4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  
+  .card{
+    display: flex block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(253, 195, 20, 1); 
+    border-radius: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+    }
+
+  .card:hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px);  /* Moves the element up by 10 pixels */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);  /* Adds a shadow to enhance the floating effect */
+  }
+.title-about{
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+.card img {
+    border: 0px solid rgb(1, 1, 1);
+    padding: 0px;
+    border-radius: 10px;
+    width: 100%; /* Make width responsive */
+    height: auto; /* Height auto for aspect ratio */
+    aspect-ratio: 1 / 1; /* Ensures the image stays square, replace with desired ratio */
+    object-fit: cover; /* Cover to ensure image fills the area */
+    margin: 0 auto;
+    display: block;
+
+}
+
+  /* Some left and right padding inside the container */
+  .container { /*THIS IS THE CONTAINER FOR THE ITEMS IN THE CARDS!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    display: grid;
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Adjusts spacing around cards */
+    padding: 0 10px;
+    text-align: center;
+    place-items: center;
+    overflow: hidden;
+    
+
+
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+  }
+
+  .card .btn{
+   text-align: center;
+   color: black;
+    margin: 1rem .2rem;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    
+  }
+
+  /*Pop-up for when an email is copied*/
+    .popup {
+      visibility: hidden;
+      background-color:  rgb(59, 179, 71);
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      position: fixed;
+      z-index: 1;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 200px;
+  }
+  .popup.show {
+      visibility: visible;
+      animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+  }
+  @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+  @keyframes fadeOut {
+      from {opacity: 1;}
+      to {opacity: 0;}
+  }
+  @keyframes glow{
+    to {
+      box-shadow: 0px 0px 20px 20px #ffffff;
+    }
+  }
+  
+
+
