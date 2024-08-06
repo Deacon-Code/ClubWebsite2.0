@@ -5,9 +5,17 @@
     justify-content: center;
     height: 70vh;
     background-color: rgb(253, 195, 20);
+    background-image: url("../assets/yellowWhiteSquare.svg");
+    background-size: cover;
 }
 
-.groupmeLink:hover{
+ .contactContainer .email{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactContainer .groupmeLink:hover{
     filter: brightness(1.4);
     cursor: pointer;
 }
