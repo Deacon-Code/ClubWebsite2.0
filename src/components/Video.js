@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./VideoStyles.css";
 
-import codingVid from "../assets/ProgrammingLive.mp4";
+import codingVid from "../assets/ProgrammingLiveDirectlyFacing.mp4";
 
 const Video = () => {
   return (
