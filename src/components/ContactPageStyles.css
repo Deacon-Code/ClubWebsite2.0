@@ -1,0 +1,14 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: rgb(253, 195, 20);
+}
+
+.groupmeLink:hover{
+    filter: brightness(1.4);
+    cursor: pointer;
+}
+
