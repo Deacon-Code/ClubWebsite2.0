@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./AboutStyles.css";
 import DeaconCodeRobot from "../assets/DeaconCodeRobot.png";
-import TylerPassyn from "../assets/TYLER-08.jpg";
+import TylerPassyn from "../assets/TylerPassyn.jpg";
+import AthenaHartigan from "../assets/AthenaHartigan.jpg";
+import JasonBoyd from "../assets/JasonBoyd.jpg";
 import Clinton from "../assets/Clinton.png";
 import { FaCircle } from "react-icons/fa";
 
@@ -42,28 +44,26 @@ const About = () => {
             <FaCircle className="dotIcon" />
             Deacon Code facilitates student devlopment in software engineering
             by providing a platform for students to work on technical projects.
-            These projects can range from web development to mobile app
-            development to machine learning. We will also have hackathons,
-            workshops, and guest speakers to help you learn more about software
-            engineering and the tech industry.
+            These projects can range from web development to machine learning.
+            We will also have hackathons, workshops, and guest speakers to help
+            you learn more about software engineering and the tech industry.
           </p>
           <h1>When do you meet?</h1>
           <p>
             <FaCircle className="dotIcon" />
-            We meet every Monday from 5:00 - 6:00 PM in Manchester Hall 212. We
+            We meet every Monday from 5:00 - 6:00 PM in Manchester Hall 212.
+            Please note that this location might change and so joining the
+            GroupMe is the best way to keep up with any location changes. We
             will also have additional meetings for project teams, as scheduled
             by project team leaders
           </p>
-          <h1>How can I join?</h1>
+          <h1>How can I get updates?</h1>
           <p>
             <FaCircle className="dotIcon" />
-            Join our Slack workspace to stay updated on our events and projects.
-            You can also join our mailing list to receive updates.
+            Join our GroupMe to stay updated on our events and projects. You can
+            go to our contact page to join our GroupMe.
           </p>
         </div>
-        {/*<div className = 'about-image'>
-                <img src = {DeaconCodeRobot} alt = 'DeaconCodeRobot' />
-            </div> Optional image, maybe add maybe don't*/}
       </div>
       <div className="midsection-container">
         <h1 className="align-center-header">Meet the Team</h1>
@@ -95,18 +95,18 @@ const About = () => {
           <div class="column">
             <div class="card">
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png"
+                src={JasonBoyd}
                 alt="Vice President"
                 style={{ width: "100%" }}
               />
               <div class="container">
                 <h2>Jason Boyd</h2>
                 <p class="title-about">Vice President</p>
-                <p>Class of 2025</p>
-                <p>example@example.com</p>
+                <p>Class of 2027</p>
+                <p>boydje23@wfu.edu</p>
                 <p
                   className="btn"
-                  onClick={() => copyToClipboard("jboyd@wfu.edu")}
+                  onClick={() => copyToClipboard("boydje23@wfu.edu")}
                 >
                   {" "}
                   Contact
@@ -118,18 +118,18 @@ const About = () => {
           <div class="column">
             <div class="card">
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Jimmy_McGill_BCS_S3.png/220px-Jimmy_McGill_BCS_S3.png"
+                src={AthenaHartigan}
                 alt="Technical Lead1"
                 style={{ width: "100%" }}
               />
               <div class="container">
-                <h2>Saul Goodman</h2>
+                <h2>Athena Hartigan</h2>
                 <p class="title-about">Technical Lead</p>
-                <p>Class of 2027</p>
-                <p>example@example.com</p>
+                <p>Class of 2025</p>
+                <p>hartag21@wfu.edu</p>
                 <p
                   className="btn"
-                  onClick={() => copyToClipboard("example@example.com")}
+                  onClick={() => copyToClipboard("hartag21@wfu.edu")}
                 >
                   {" "}
                   Contact
@@ -138,7 +138,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div class="row">
+        {/*<div class="row">
           <div class="column">
             <div class="card">
               <img
@@ -205,7 +205,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
       <div className={`popup ${showPopup ? "show" : ""}`}>Email copied!</div>
     </div>
