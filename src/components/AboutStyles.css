@@ -26,7 +26,8 @@
     box-sizing: border-box;
     width: 20px; 
     height: 20px;
-    color: rgba(253, 195, 20,1); /* Change the color of the dot */
+    color: rgb(0, 0, 0); /* Change the color of the dot */
+    flex-shrink: 0;
   }
 
   .QandA .about-image {
