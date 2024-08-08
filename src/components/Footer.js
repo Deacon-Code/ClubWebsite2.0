@@ -12,7 +12,14 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 
+import useRedirectOnClick from "./Hooks/useRedirectOnClick";
+
+import { SiGroupme } from "react-icons/si";
+
 const Footer = () => {
+  const handleGroupmeClick = useRedirectOnClick(
+    "https://groupme.com/join_group/102163335/5l7p6DwY"
+  );
   return (
     <div className="footer">
       <div className="footer-container">
@@ -33,7 +40,7 @@ const Footer = () => {
                 size={20}
                 style={{ color: "#000", marginRight: "2rem" }}
               />{" "}
-              DeaconCode@WFU.edu
+              passta23@wfu.edu
             </h4>
           </div>
           <div className="phone">
@@ -59,7 +66,11 @@ const Footer = () => {
               size={30}
               style={{ color: "#000", marginRight: "1rem" }}
             />
-            <FaSlack size={30} style={{ color: "#000", marginRight: "1rem" }} />
+            <SiGroupme
+              onClick={handleGroupmeClick}
+              size={30}
+              style={{ color: "#000", marginRight: "1rem", cursor: "pointer" }}
+            />
             <FaLinkedin
               size={30}
               style={{ color: "#000", marginRight: "1rem" }}
