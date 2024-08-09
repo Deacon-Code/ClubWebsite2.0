@@ -138,7 +138,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/*<div class="row">
+        <div class="row">
           <div class="column">
             <div class="card">
               <img
@@ -147,10 +147,10 @@ const About = () => {
                 style={{ width: "100%" }}
               />
               <div class="container">
-                <h2>Saul Goodman</h2>
+                <h2>Cecilia Liu</h2>
                 <p class="title-about">Technical Lead</p>
-                <p>Class of 2027</p>
-                <p>example@example.com</p>
+                <p>Class of 2025</p>
+                <p>liuy320@wfu.edu</p>
                 <p
                   className="btn"
                   onClick={() => copyToClipboard("jimmyMcgill@gmail.com")}
@@ -162,7 +162,7 @@ const About = () => {
             </div>
           </div>
           <div class="column">
-            <div class="card">
+            {/*<div class="card">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Gustavo_Fring_BCS_S3E10.png/220px-Gustavo_Fring_BCS_S3E10.png"
                 alt="Technical Lead2"
@@ -181,10 +181,10 @@ const About = () => {
                   Contact
                 </p>
               </div>
-            </div>
+            </div>?*/}
           </div>
           <div class="column">
-            <div class="card">
+            {/*<div class="card">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Jesse_Pinkman_S5B.png/220px-Jesse_Pinkman_S5B.png"
                 alt="Technical Lead3"
@@ -203,9 +203,9 @@ const About = () => {
                   Contact
                 </p>
               </div>
-            </div>
+            </div>*/}
           </div>
-        </div>*/}
+        </div>
       </div>
       <div className={`popup ${showPopup ? "show" : ""}`}>Email copied!</div>
     </div>
