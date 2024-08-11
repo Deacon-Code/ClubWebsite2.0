@@ -12,6 +12,8 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 
+import { IoIosWarning } from "react-icons/io";
+
 import useRedirectOnClick from "./Hooks/useRedirectOnClick";
 
 import { SiGroupme } from "react-icons/si";
@@ -51,6 +53,15 @@ const Footer = () => {
               />{" "}
               Mondays from 5:00 - 6:00 PM
             </h4>
+            <div className="disclaimer">
+              <h4>
+                <IoIosWarning
+                  size={30}
+                  style={{ color: "#000", marginRight: "2rem" }}
+                />
+                Location and time might change.
+              </h4>
+            </div>
           </div>
         </div>
         <div className="right">
@@ -62,19 +73,19 @@ const Footer = () => {
             community. Join us to code, create, and connect!
           </p>
           <div className="socials">
-            <FaInstagram
+            {/*<FaInstagram
               size={30}
               style={{ color: "#000", marginRight: "1rem" }}
-            />
+            />*/}
             <SiGroupme
               onClick={handleGroupmeClick}
               size={30}
               style={{ color: "#000", marginRight: "1rem", cursor: "pointer" }}
             />
-            <FaLinkedin
+            {/*<FaLinkedin
               size={30}
               style={{ color: "#000", marginRight: "1rem" }}
-            />
+            />*/}
           </div>
         </div>
       </div>
