@@ -1,3 +1,10 @@
+**#Important Notes**
+This is the main repository for Deacon Code's website. Please do not edit unless you have been authorized to do so, as any instabilities could cause the main build to have errors. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
