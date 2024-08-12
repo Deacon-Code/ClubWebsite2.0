@@ -6,6 +6,7 @@ import Calendar from "./routes/Calendar";
 import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 import ProjectA from "./routes/SpecificProjects/ProjectA";
+import Covid19Project from "./routes/SpecificProjects/Covid19Project";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/projects/projecta" element={<ProjectA />} />
+      <Route path="/projects/COVID19Project" element={<Covid19Project />} />
     </Routes>
   );
 }

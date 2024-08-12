@@ -3,48 +3,28 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import GenericProjectsHeader from "../../components/GenericProjectsHeader";
 import ProjectDescription from "../../components/ProjectDescription";
-import Clinton from "../../assets/images/clinton.jpg";
+import Clinton from "../../assets/Clinton.png";
+import NYCmap from "../../assets/PredictedvsActualCases.png";
 
 const Covid19Project = () => {
-  return;
-  <div>
-    <Navbar />
-    <GenericProjectsHeader
-      heading="COVID-19 Project"
-      text="A foray in Covid-19 data analysis"
-      backgroundImage={Clinton}
-    />
-    <ProjectDescription
-      heading="Cicero's Oration against Catiline"
-      text1="How far will you (continue to) abuse our patience, Catiline? For how much longer
-will that rage of yours make a mockery of us? To what point will your unbridled
-audacity show itself? Did the nocturnal garrison on the Palatine, the watch patrols of
-the city, the fear of the people, the assemblies of all the good men, this most fortified
-place of holding the senate, the faces and expressions of all these people [the senators]
-not move you at all? Do you not realise that your plans lie revealed? Do you not see
-that your plot is already held in check by the knowledge of all these people? Do you
-think that any of us do not know what you did last night, what you did the night
-before, where you were, who you summoned, and what plans you made?"
-      image1={Clinton}
-      text2="O what times (we live in)! O what customs (we pursue)! The senate understands
-these things; the consul sees these things; this man, however, lives. He lives? No
-indeed, he even comes to the senate. He even takes part in public affairs. He points
-out and designates with his eyes, individuals amongst us for slaughter. But we, brave
-men, seem to do enough for the state, if we avoid, the rage and the weapons of that
-man. You, Catiline, should have been led to death already long ago [lit. it behoved
-you to be led…] by order of the consul, that ruin, which you are devising against us,
-should have been conferred upon you.  Indeed a most distinguished man, Publius Scipio, pontifex maximus, as a private man
-killed Tiberius Gracchus, (although) weakening the affairs of state (only) moderately:
-Will we consuls put up with Catiline, wanting to lay waste to the whole earth with
-slaughter and fire? For I pass over those old times too much, because Gaius Servilius
-Ahala killed with his own hand Spurius Manlius, striving after a new state of affairs.
-There was, there was once in this state that courage so that brave men might check a
-harmful citizen with fiercer penalties than the bitterest enemy. We have a decree of the
-state against you, Catiline, both strong and grave; the state does not lack the advice or
-authority of this class [senate]. We, we, I say it openly, we consuls are lacking."
-      image2={Deacon}
-    />
-  </div>;
+  return (
+    <div>
+      <Navbar />
+      <GenericProjectsHeader
+        heading="COVID-19 Project"
+        text="A foray in Covid-19 data analysis"
+        backgroundImage={NYCmap}
+      />
+      <ProjectDescription
+        heading="COVID-19 Project"
+        text1="In the Spring of 2024, a group of students worked to analyze COVID-19 data from New York State. The data included information about the number of cases per 100,000 in each county in the state. Using the Pandas library in Python and polynomial multivariable linear regression, the intention was to experiment with curve fitting to see if reasonable predictions could be made about the future spread of COVID-19 in each county. The quality of the prediction was assed using Mean Absolute Error (MAE). Additionally, there were attempts to integrate the predicative data with Geo Pandas to provide a map of COVID-19 data and its change over time and then to compare this data to prediction. In the future there are hopes that better mapping of the New York state predictive data can occur and that the quality of the prediction can improve with better data analysis techniques."
+        image1={Clinton}
+        text2="The image above is an example of the COVID-19 infection rate per 100,000 in New York State for the county of Clinton over time. The red dots represent the actual infection rate for a particular day, and the blue line represents the predicted infection rate. On the right is a map of the state of New York on a particular day (2024-03-03) from the actual infection rate per 100,000 compared to the predicted infection rate on that same day. As can be seen, the model on this particular day overpredicted the number of infected."
+        image2={NYCmap}
+      />
+      <Footer />
+    </div>
+  );
 };
 
 export default Covid19Project;
