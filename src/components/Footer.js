@@ -59,7 +59,7 @@ const Footer = () => {
                   size={30}
                   style={{ color: "#000", marginRight: "2rem" }}
                 />
-                Location and time might change.
+                Location and time subject to change.
               </h4>
             </div>
           </div>
