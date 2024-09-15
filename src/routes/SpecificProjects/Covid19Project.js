@@ -5,8 +5,10 @@ import GenericProjectsHeader from "../../components/GenericProjectsHeader";
 import ProjectDescription from "../../components/ProjectDescription";
 import Clinton from "../../assets/Clinton.png";
 import NYCmap from "../../assets/PredictedvsActualCases.png";
+import useScrollToTop from "../../components/Hooks/useScrollToTop.js";
 
 const Covid19Project = () => {
+  useScrollToTop();
   return (
     <div>
       <Navbar />

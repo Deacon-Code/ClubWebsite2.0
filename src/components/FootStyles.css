@@ -53,8 +53,10 @@
 }
 
 @media screen and (max-width: 640px){
-    .footer .container{
-        grid-template-columns: 1fr;
+    .footer .footer-container{
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
     }
     .footer .social{
         margin: auto;
