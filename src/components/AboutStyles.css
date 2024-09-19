@@ -104,7 +104,7 @@
       bottom: 0;
       background: url("../assets/yellowWhiteSquare.svg") no-repeat center center;
       background-size: cover;
-      filter: blur(2px); /* Apply the blur effect to the background image */
+      filter: blur(4px); /* Apply the blur effect to the background image */
       z-index: -1; /* Ensure the pseudo-element is behind the content */
   }
 
