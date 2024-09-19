@@ -10,6 +10,7 @@ import {
   FaInstagram,
   FaCalendar,
   FaCalendarAlt,
+  FaGithub,
 } from "react-icons/fa";
 
 import { IoIosWarning } from "react-icons/io";
@@ -22,6 +23,10 @@ const Footer = () => {
   const handleGroupmeClick = useRedirectOnClick(
     "https://groupme.com/join_group/102163335/5l7p6DwY"
   );
+  const handleGitHubClick = useRedirectOnClick(
+    "https://github.com/Deacon-Code"
+  );
+
   return (
     <div className="footer">
       <div className="footer-container">
@@ -73,10 +78,17 @@ const Footer = () => {
             community. Join us to code, create, and connect!
           </p>
           <div className="socials">
-            {/*<FaInstagram
-              size={30}
-              style={{ color: "#000", marginRight: "1rem" }}
-            />*/}
+            {
+              <FaGithub
+                onClick={handleGitHubClick}
+                size={30}
+                style={{
+                  color: "#000",
+                  marginRight: "1rem",
+                  cursor: "pointer",
+                }}
+              />
+            }
             <SiGroupme
               onClick={handleGroupmeClick}
               size={30}

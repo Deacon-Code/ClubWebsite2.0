@@ -36,7 +36,7 @@
   }
 
   .QandA{
-      background: rgb(255, 255, 255);
+      background: rgb(0, 0, 0);
   }
 
 
@@ -72,6 +72,7 @@
     background-image: url('../assets/blackAndYellowSquare.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
 
   .align-center-header{
@@ -85,13 +86,26 @@
       background-position: center;
     }
 
-  .about .about-text{
-    background-color: rgb(255, 255, 255);
-    background-image: url("../assets/yellowWhiteSquare.svg");
-    padding: 0.4rem;
-    font-size: 1.4rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .about .about-text {
+      position: relative; /* Ensure the parent element is positioned relative */
+      padding: 0.4rem;
+      font-size: 1.4rem;
+      color: white;
+      overflow: hidden; /* Prevent overflow */
+      z-index: 1; /* Ensure the content is on top */
+  }
+  
+  .about .about-text::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("../assets/yellowWhiteSquare.svg") no-repeat center center;
+      background-size: cover;
+      filter: blur(2px); /* Apply the blur effect to the background image */
+      z-index: -1; /* Ensure the pseudo-element is behind the content */
   }
 
   
