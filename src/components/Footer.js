@@ -56,7 +56,7 @@ const Footer = () => {
                 size={20}
                 style={{ color: "#000", marginRight: "2rem" }}
               />{" "}
-              Mondays from 5:00 - 6:00 PM
+              Mondays from 7:00 - 8:00 PM
             </h4>
             <div className="disclaimer">
               <h4>
