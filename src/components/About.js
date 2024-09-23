@@ -52,11 +52,11 @@ const About = () => {
           <h1>When do you meet?</h1>
           <p>
             <FaCircle className="dotIcon" />
-            We meet every Monday from 5:00 - 6:00 PM in Manchester Hall 212.
-            Please note that this location and time might change and so joining
-            the GroupMe is the best way to keep up with any location changes. We
+            We meet every Monday from 7:00 - 8:00 PM in Manchester Hall 121.
+            Please note that this location and time might change, so joining the
+            GroupMe is the best way to keep up with any location changes. We
             will also have additional meetings for project teams, as scheduled
-            by project team leaders
+            by project team leaders.
           </p>
           <h1>How can I get updates?</h1>
           <p>

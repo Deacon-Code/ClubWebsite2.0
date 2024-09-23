@@ -37,7 +37,7 @@ const Footer = () => {
               style={{ color: "#000", marginRight: "2rem" }}
             />
             <div>
-              <p>Manchester Hall 229</p>
+              <p>Manchester Hall 121</p>
               <h4>Wake Forest University</h4>
             </div>
           </div>
