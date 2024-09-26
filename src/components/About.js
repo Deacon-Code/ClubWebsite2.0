@@ -7,6 +7,7 @@ import JasonBoyd from "../assets/JasonBoyd.jpg";
 import Clinton from "../assets/Clinton.png";
 import CeciliaLiu from "../assets/CeciliaLiu.JPG";
 import { FaCircle } from "react-icons/fa";
+import MaxFinegan from "../assets/MaxFinegan.jpg";
 
 const About = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -163,26 +164,28 @@ const About = () => {
             </div>
           </div>
           <div class="column">
-            {/*<div class="card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Gustavo_Fring_BCS_S3E10.png/220px-Gustavo_Fring_BCS_S3E10.png"
-                alt="Technical Lead2"
-                style={{ width: "100%" }}
-              />
-              <div class="container">
-                <h2>Gus Fring</h2>
-                <p class="title-about">Technical Lead</p>
-                <p>Class of 2025</p>
-                <p>example@example.com</p>
-                <p
-                  className="btn"
-                  onClick={() => copyToClipboard("example@example.com")}
-                >
-                  {" "}
-                  Contact
-                </p>
+            {
+              <div class="card">
+                <img
+                  src={MaxFinegan}
+                  alt="Technical Lead2"
+                  style={{ width: "100%" }}
+                />
+                <div class="container">
+                  <h2>Max Finegan</h2>
+                  <p class="title-about">Technical Lead</p>
+                  <p>Class of 2027</p>
+                  <p>finems23@wfu.edu</p>
+                  <p
+                    className="btn"
+                    onClick={() => copyToClipboard("finems23@wfu.edu")}
+                  >
+                    {" "}
+                    Contact
+                  </p>
+                </div>
               </div>
-            </div>?*/}
+            }
           </div>
           <div class="column">
             {/*<div class="card">
