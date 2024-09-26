@@ -126,7 +126,7 @@ const About = () => {
               />
               <div class="container">
                 <h2>Athena Hartigan</h2>
-                <p class="title-about">Technical Lead</p>
+                <p class="title-about">Treasurer</p>
                 <p>Class of 2025</p>
                 <p>hartag21@wfu.edu</p>
                 <p
