@@ -63,8 +63,7 @@
     object-fit: cover; /* Cover to ensure image fills the area */
     margin: 0 auto;
     display: block;
-
-}
+  }
 
   /* Some left and right padding inside the container */
   .inside-card-container { /*THIS IS THE CONTAINER FOR THE ITEMS IN THE CARDS!!!!!!!!!!!!!!!!!!!!!!!!!*/
