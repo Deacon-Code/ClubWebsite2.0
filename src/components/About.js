@@ -139,28 +139,6 @@ const About = () => {
 				</div>
 				<div class="row">
 					<div class="column">
-						{/*<div class="card">
-              <img
-                src={CeciliaLiu}
-                alt="Technical Lead1"
-                style={{ width: "100%" }}
-              />
-              <div class="container">
-                <h2>Cecilia Liu</h2>
-                <p class="title-about">Technical Lead</p>
-                <p>Class of 2024</p>
-                <p>liuy320@wfu.edu</p>
-                <p
-                  className="btn"
-                  onClick={() => copyToClipboard("liuy320@wfu.edu")}
-                >
-                  {" "}
-                  Contact
-                </p>
-              </div>
-            </div>        */}
-					</div>
-					<div class="column">
 						{
 							<div class="card">
 								<img
