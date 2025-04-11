@@ -158,7 +158,7 @@ const About = () => {
                   Contact
                 </p>
               </div>
-            </div>*/}
+            </div>        */}
 					</div>
 					<div class="column">
 						{
