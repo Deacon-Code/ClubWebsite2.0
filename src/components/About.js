@@ -160,8 +160,8 @@ const About = () => {
 								</div>
 							</div>
 						}
-						<div class="column"></div>
 					</div>
+					<div class="column"></div>
 					<div class="column">
 						{/*<div class="card">
               <img
